@@ -85,10 +85,39 @@
 
             </div>
         </section>
+
         <!-- Форма для заполнения -->
         <form class="js-speaker-form">
-            <input type="text" name="user-name" />
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name" />
+
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" />
+
+            <label for="email">Почта</label>
+            <input type="email" name="email" id="email" />
+            </br>
+
+            <label>
+                Комментарий
+                <textarea name="comment" id="coment" rows="10" placeholder="Введите текст"></textarea>
+
+            </label>
+
+            <input type="checkbox" name="" id="policy">
+            <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора </label>
+
+
+            <button type="submit">Отправить</button>
         </form>
+        <!-- Бэкдроп -->
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <p></p>
+                <button data-modal-close class="button-close">X</button>
+
+            </div>
+        </div>
 
         <!-- Особенности -->
         <section class="features">
@@ -466,13 +495,7 @@
 
 
 
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <p></p>
-            <button data-modal-close class="button-close">X</button>
 
-        </div>
-    </div>
 
 
 
