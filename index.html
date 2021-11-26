@@ -87,38 +87,43 @@
         </section>
 
         <!-- Форма для заполнения -->
-        <form class="js-speaker-form">
+        <form class="form js-speaker-form">
+            <h2 class="form-tittle">Оставьте свои данные, мы вам перезвоним</h2>
+
             <div class="form-field">
                 <label for="name">Имя</label>
                 <input type="text" name="name" id="name" />
             </div>
 
-            <div>
+            <div class="form-field">
                 <label for="tel">Телефон</label>
                 <input type="tel" name="tel" id="tel" />
             </div>
 
-            <div>
+            <div class="form-field">
                 <label for="email">Почта</label>
                 <input type="email" name="email" id="email" />
             </div>
 
 
-            <div>
-                <label>
-                    Комментарий
-                    <textarea name="comment" id="coment" rows="10" placeholder="Введите текст"></textarea>
-
-                </label>
+            <div class="form-field">
+                <label for="comment">Комментарий</label>
+                <textarea name="comment" id="coment" rows="10" placeholder="Введите текст"></textarea>
             </div>
 
-            <div>
-                <input type="checkbox" name="" id="policy">
+            <div class="check-option">
+                <input type="checkbox" name="" id="policy" class="check">
                 <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора </label>
             </div>
+            <!-- <li class="check-option">
+                <input type="checkbox" name="" id="policy" class="check">
+                <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора </label>
+            </li> -->
 
+            <div class="button-send">
+                <button type="submit" class="send">Отправить</button>
+            </div>
 
-            <button type="submit">Отправить</button>
         </form>
         <!-- Бэкдроп -->
         <div class="backdrop is-hidden" data-modal>
