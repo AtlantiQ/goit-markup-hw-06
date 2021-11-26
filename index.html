@@ -88,24 +88,34 @@
 
         <!-- Форма для заполнения -->
         <form class="js-speaker-form">
-            <label for="name">Имя</label>
-            <input type="text" name="name" id="name" />
+            <div class="form-field">
+                <label for="name">Имя</label>
+                <input type="text" name="name" id="name" />
+            </div>
 
-            <label for="tel">Телефон</label>
-            <input type="tel" name="tel" id="tel" />
+            <div>
+                <label for="tel">Телефон</label>
+                <input type="tel" name="tel" id="tel" />
+            </div>
 
-            <label for="email">Почта</label>
-            <input type="email" name="email" id="email" />
-            </br>
+            <div>
+                <label for="email">Почта</label>
+                <input type="email" name="email" id="email" />
+            </div>
 
-            <label>
-                Комментарий
-                <textarea name="comment" id="coment" rows="10" placeholder="Введите текст"></textarea>
 
-            </label>
+            <div>
+                <label>
+                    Комментарий
+                    <textarea name="comment" id="coment" rows="10" placeholder="Введите текст"></textarea>
 
-            <input type="checkbox" name="" id="policy">
-            <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора </label>
+                </label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="" id="policy">
+                <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора </label>
+            </div>
 
 
             <button type="submit">Отправить</button>
