@@ -87,49 +87,67 @@
         </section>
 
         <!-- Форма для заполнения -->
-        <form class="form js-speaker-form">
-            <h2 class="form-tittle">Оставьте свои данные, мы вам перезвоним</h2>
 
-            <div class="form-field">
-                <label for="name">Имя</label>
-                <input type="text" name="name" id="name" />
-            </div>
-
-            <div class="form-field">
-                <label for="tel">Телефон</label>
-                <input type="tel" name="tel" id="tel" />
-            </div>
-
-            <div class="form-field">
-                <label for="email">Почта</label>
-                <input type="email" name="email" id="email" />
-            </div>
-
-
-            <div class="form-field">
-                <label for="comment">Комментарий</label>
-                <textarea class="comment" name="comment" id="coment" rows="10" placeholder="Введите текст"></textarea>
-            </div>
-
-            <div class="check-option">
-                <input type="checkbox" name="" id="policy" class="check">
-                <label class="policy" for="policy">Соглашаюсь с рассылкой и принимаю Условия договора </label>
-            </div>
-            <!-- <li class="check-option">
-                <input type="checkbox" name="" id="policy" class="check">
-                <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора </label>
-            </li> -->
-
-            <div class="button-send">
-                <button type="submit" class="send">Отправить</button>
-            </div>
-
-        </form>
         <!-- Бэкдроп -->
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <p></p>
                 <button data-modal-close class="button-close">X</button>
+                <p class="form-tittle">Оставьте свои данные, мы вам перезвоним</p>
+                <form class="form js-speaker-form">
+
+
+                    <div class="form-field">
+                        <label for="name" class="form-lable">Имя</label>
+                        <div class="input-position">
+                            <input type="text" class="form-input" name="name" id="name" />
+                            <svg class="form-icon">
+                                <use href="./image/social/symbol-defs.svg#icon-person"> </use>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="tel">Телефон</label>
+                        <div class="input-position">
+                            <input type="tel" class="form-input name=" tel" id="tel" />
+                            <svg class="form-icon">
+                                <use href="./image/social/symbol-defs.svg#icon-mobile"> </use>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Почта</label>
+                        <div class="input-position">
+                            <input type="email" class="form-input name=" email" id="email" />
+                            <svg class="form-icon">
+                                <use href="./image/social/symbol-defs.svg#icon-email"> </use>
+                            </svg>
+                        </div>
+                    </div>
+
+
+                    <div class="form-field">
+                        <label class="comment-text" for="comment">Комментарий</label>
+                        <textarea class="comment form-input comment-area" name=" comment" id="coment" rows="10"
+                            placeholder="Введите текст"></textarea>
+                    </div>
+
+                    <div class="check-option">
+                        <label class="policy" for="policy">
+                            <input type="checkbox" name="" id="policy" class="checkbox">
+                            <span class="check-icon"></span>
+                            Соглашаюсь с рассылкой и принимаю
+                            <a class="hyperlink" href="">Условия договора</a>
+                        </label>
+                    </div>
+
+
+                    <button type="submit" class="send">Отправить</button>
+
+
+                </form>
+
 
             </div>
         </div>
