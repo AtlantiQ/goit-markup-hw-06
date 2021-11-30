@@ -1064,27 +1064,24 @@ p {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* .form-icon:hover {
+  color: var(--hover);
+}
+
+.form-input:hover {
+  border-color: var(--hover);
+}
+
+.form-use:hover {
   fill: var(--hover);
 } */
 
-.form-input:hover,
-.form-input:focus {
-  border-color: var(--hover);
-}
-
-.form-field:hover,
-.form-field:focus {
+.form-input:focus + .form-icon {
   fill: var(--hover);
 }
 
 .form-input:focus {
   border-color: var(--hover);
 }
-
-/* .form-field:focus-within {
-  border-color: var(--hover);
-} */
-
 /* .police::before {
   content: '';
   display: inline-block;
